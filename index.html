@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback app</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <h1>Feedback app</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="card card-form">
+            <form id="form">
+                <h2>How would you rate our service</h2>
+                <ul class="rating">
+                    <li>
+                        <input 
+                        type="radio" name="rating"
+                        value='1' id="num1"/>
+                        <label for="num1">1</label>
+                    </li>
+                    <li>
+                        <input 
+                        type="radio" name="rating"
+                        value='2' id="num2"/>
+                        <label for="num2">2</label>
+                    </li>
+                    <li>
+                        <input 
+                        type="radio" name="rating"
+                        value='3' id="num3"/>
+                        <label for="num3">3</label>
+                    </li>
+                    <li>
+                        <input 
+                        type="radio" name="rating"
+                        value='4' id="num4"/>
+                        <label for="num4">4</label>
+                    </li>
+                    <li>
+                        <input 
+                        type="radio" name="rating"
+                        value='5' id="num5" checked/>
+                        <label for="num5">5</label>
+                    </li>
+                </ul>
+                <div class="input-group">
+                    <input type="text" name="text" placeholder="Write a review"/>
+                    <button type="submit" class="btn btn-secondary"></button>
+                </div>
+                <div class="msg"></div>
+            </form>
+        </div>
+        <div class="filter-btns">
+            <div class="btn-fil">
+                <h4 class="fil-btn btn-fil1 active-btn">All</h4>
+                <p class="review show"></p>
+            </div>
+            <div class="btn-fil">
+                <h4 class="fil-btn btn-fil2">Positive</h4>
+                <p class="pos-review"></p>
+            </div>
+            <div class="btn-fil">
+                <h4 class="fil-btn btn-fil3">Neutral</h4>
+                <p class="neu-review"></p>
+            </div>
+            <div class="btn-fil">
+                <h4 class="fil-btn btn-fil4">Critical</h4>
+                <p class="crit-review"></p>
+            </div>
+        </div>
+        <div class="feedback-stats">
+            <h4>Average Rating: <span class="average"></span></h4>
+        </div>
+        <div class="rating-stats">
+            <div class="rat-container">
+                <div class="stars">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                </div>
+                <div class="prog-wrapper"><div class="progress"></div></div>
+                <div class="ratPerc"></div>
+            </div>
+            <div class="rat-container">
+                <div class="stars">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                </div>
+                <div class="prog-wrapper"><div class="progress"></div></div>
+                <div class="ratPerc"></div>
+            </div>
+            <div class="rat-container">
+                <div class="stars">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                </div>
+                <div class="prog-wrapper"><div class="progress"></div></div>
+                <div class="ratPerc"></div>
+            </div>
+            <div class="rat-container">
+                <div class="stars">
+                    <img src="./images/star.png" alt="">
+                    <img src="./images/star.png" alt="">
+                </div>
+                <div class="prog-wrapper"><div class="progress"></div></div>
+                <div class="ratPerc"></div>
+            </div>
+            <div class="rat-container">
+                <div class="stars">
+                    <img src="./images/star.png" alt="">
+                </div>
+                <div class="prog-wrapper"><div class="progress"></div></div>
+                <div class="ratPerc"></div>
+            </div>
+        </div>
+        <div class="feedback-list">
+
+        </div>
+    </div>
+</body>
+</html>
